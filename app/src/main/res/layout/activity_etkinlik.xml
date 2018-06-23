@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF"
+    tools:context="com.example.asus.android_hedef_aliskanlik_proje.EtkinlikActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etkinlik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Hedefinizi Giriniz" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/butonkaydet"
+            style="@android:style/Widget.DeviceDefault.Button.Toggle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="butonaDokunuldu"
+            android:text="KAYDET"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/butonlistele"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#99CC66"
+            android:text="LISTELE"
+            android:textSize="20dp"
+            android:onClick="butonaDokunuldu" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageButton3"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="31dp"
+            android:text="Imagination is more important than knowledge. (Albert Einstein)"
+            android:textSize="15dp"
+            tools:ignore="UnknownId" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asus.android_hedef_aliskanlik_proje.HedefFragment"
+android:background="#FFFF"
+
+
+    android:weightSum="1">
+
+
+    <EditText
+        android:id="@+id/hedeftext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hedef"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAŞLANGIÇ:"
+        android:id="@+id/baslangictext"
+        android:layout_marginTop="5dp"/>
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:background="@drawable/yeni"
+            android:id="@+id/tarihbuton"/>
+
+        <TextView
+            android:id="@+id/tarihtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="23dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <Button
+            android:id="@+id/saatbuton"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/clockm" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/saattext"
+          android:textSize="23dp"
+          android:layout_marginLeft="40dp"
+
+          />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/aciklamatext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/aciklama"
+
+        />
+<TextView
+    android:layout_marginTop="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:id="@+id/alarmtext"
+    android:text="Alarm Kur "/>
+
+    <Button
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/alarmclock"
+        android:id="@+id/butonalarm"
+      />
+</LinearLayout>
